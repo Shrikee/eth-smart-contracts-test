@@ -1,0 +1,26 @@
+{
+  "name": "titanium_blockchain_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "truffle-compile": "truffle compile",
+    "truffle-migrate": "truffle migrate --network rinkeby --reset",
+    "truffle-console": "truffle console",
+    "truffle-test": "truffle test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.0.18",
+    "dotenv": "^8.1.0",
+    "truffle": "^5.0.36"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "ganache-cli": "^6.7.0",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.2"
+  }
+}
