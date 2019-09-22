@@ -10,30 +10,30 @@
         lg="3"
       >
         <v-card>
-          <v-card-title class="subheading font-weight-bold">
-            {{ shop[1] }}
-          </v-card-title>
+          <v-card-title class="subheading font-weight-bold">{{
+            shop[1]
+          }}</v-card-title>
 
           <v-divider></v-divider>
 
           <v-list dense>
             <v-list-item>
               <v-list-item-content>Created time:</v-list-item-content>
-              <v-list-item-content class="align-end">
-                {{ shop.createdTime }}
-              </v-list-item-content>
+              <v-list-item-content class="align-end">{{
+                shop.createdTime
+              }}</v-list-item-content>
             </v-list-item>
             <v-list-item>
               <v-list-item-content>Latitude:</v-list-item-content>
-              <v-list-item-content class="align-end">
-                {{ shop.lat }}
-              </v-list-item-content>
+              <v-list-item-content class="align-end">{{
+                shop.lat
+              }}</v-list-item-content>
             </v-list-item>
             <v-list-item>
               <v-list-item-content>Longitude:</v-list-item-content>
-              <v-list-item-content class="align-end">
-                {{ shop.long }}
-              </v-list-item-content>
+              <v-list-item-content class="align-end">{{
+                shop.long
+              }}</v-list-item-content>
             </v-list-item>
           </v-list>
           <v-card-actions>
