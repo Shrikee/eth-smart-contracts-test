@@ -1,9 +1,9 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  // router: {
-  //   base: './'
-  // },
+  router: {
+    base: '/eth-Smart-Contracts-deploy/'
+  },
   mode: 'universal',
   /*
    ** Headers of the page

@@ -10,30 +10,30 @@
         lg="3"
       >
         <v-card>
-          <v-card-title class="subheading font-weight-bold">{{
-            shop[1]
-          }}</v-card-title>
+          <v-card-title class="subheading font-weight-bold">
+            {{ shop[1] }}
+          </v-card-title>
 
           <v-divider></v-divider>
 
           <v-list dense>
             <v-list-item>
               <v-list-item-content>Created time:</v-list-item-content>
-              <v-list-item-content class="align-end">{{
-                shop.createdTime
-              }}</v-list-item-content>
+              <v-list-item-content class="align-end">
+                {{ shop.createdTime }}
+              </v-list-item-content>
             </v-list-item>
             <v-list-item>
               <v-list-item-content>Latitude:</v-list-item-content>
-              <v-list-item-content class="align-end">{{
-                shop.lat
-              }}</v-list-item-content>
+              <v-list-item-content class="align-end">
+                {{ shop.lat }}
+              </v-list-item-content>
             </v-list-item>
             <v-list-item>
               <v-list-item-content>Longitude:</v-list-item-content>
-              <v-list-item-content class="align-end">{{
-                shop.long
-              }}</v-list-item-content>
+              <v-list-item-content class="align-end">
+                {{ shop.long }}
+              </v-list-item-content>
             </v-list-item>
           </v-list>
           <v-card-actions>
@@ -51,7 +51,7 @@
 
 <script>
 import Web3 from 'web3'
-import shopsContract from '../../build/contracts/Shops.json'
+import shopsContract from '~/static/Shops.json'
 const web3 = new Web3(Web3.givenProvider)
 const contract = new web3.eth.Contract(
   shopsContract.abi,
