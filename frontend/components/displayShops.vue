@@ -1,47 +1,31 @@
 <template>
   <v-container fluid>
     <v-row>
-      <v-col
-        v-for="shop in shops"
-        :key="shop.name"
-        cols="12"
-        sm="6"
-        md="4"
-        lg="3"
-      >
+      <v-col v-for="shop in shops" :key="shop.name" cols="12" sm="6" md="4" lg="3">
         <v-card>
-          <v-card-title class="subheading font-weight-bold">
-            {{ shop[1] }}
-          </v-card-title>
+          <v-card-title class="subheading font-weight-bold">{{ shop[1] }}</v-card-title>
 
           <v-divider></v-divider>
 
           <v-list dense>
             <v-list-item>
               <v-list-item-content>Created time:</v-list-item-content>
-              <v-list-item-content class="align-end">
-                {{ shop.createdTime }}
-              </v-list-item-content>
+              <v-list-item-content class="align-end">{{ shop.createdTime }}</v-list-item-content>
             </v-list-item>
             <v-list-item>
               <v-list-item-content>Latitude:</v-list-item-content>
-              <v-list-item-content class="align-end">
-                {{ shop.lat }}
-              </v-list-item-content>
+              <v-list-item-content class="align-end">{{ shop.lat }}</v-list-item-content>
             </v-list-item>
             <v-list-item>
               <v-list-item-content>Longitude:</v-list-item-content>
-              <v-list-item-content class="align-end">
-                {{ shop.long }}
-              </v-list-item-content>
+              <v-list-item-content class="align-end">{{ shop.long }}</v-list-item-content>
             </v-list-item>
           </v-list>
           <v-card-actions>
             <v-btn
               color="success"
-              :href="'/map?' + 'lat=' + shop.lat + '&' + 'lng=' + shop.long"
-              >Details {{ shop.name }}</v-btn
-            >
+              :href="'./map?' + 'lat=' + shop.lat + '&' + 'lng=' + shop.long"
+            >Details {{ shop.name }}</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
